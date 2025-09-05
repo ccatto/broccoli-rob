@@ -12,12 +12,20 @@ export const routes: Routes = [
         loadComponent: () => import('./pages/home/home.component').then(m => m.HomeComponent)
       },
       {
+        path: 'hello-world',
+        loadComponent: () => import('./pages/hello-world/hello-world.component').then(m => m.HelloWorldComponent)
+      },
+      {
         path: 'page2',
         loadComponent: () => import('./pages/page2/page2.component').then(m => m.Page2)
       },
       {
         path: 'page3',
         loadComponent: () => import('./pages/page3/page3.component').then(m => m.Page3)
+      },
+      {
+        path: 'tutorial',
+        loadComponent: () => import('./pages/tutorial/tutorial.component').then(m => m.TutorialComponent)
       },
       {
         path: '**',
