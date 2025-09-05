@@ -1,3 +1,33 @@
+// src/app/app.routes.ts
 import { Routes } from '@angular/router';
+import { MainLayoutComponent } from './layouts/main-layout/main-layout.component';
 
-export const routes: Routes = [];
+export const routes: Routes = [
+  {
+    path: '',
+    component: MainLayoutComponent,
+    children: [
+      {
+        path: '',
+        loadComponent: () => import('./pages/home/home.component').then(m => m.HomeComponent)
+      },
+      {
+        path: 'page2',
+        loadComponent: () => import('./pages/page2/page2.component').then(m => m.Page2)
+      },
+      {
+        path: 'page3',
+        loadComponent: () => import('./pages/page3/page3.component').then(m => m.Page3)
+      },
+      {
+        path: '**',
+        redirectTo: ''
+      }
+    ]
+  }
+];
+
+
+// import { Routes } from '@angular/router';
+
+// export const routes: Routes = [];

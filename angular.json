@@ -29,7 +29,10 @@
                 "input": "public"
               }
             ],
+            
             "styles": [
+
+              "node_modules/primeicons/primeicons.css",
               "src/styles.scss"
             ],
             "server": "src/main.server.ts",
@@ -57,7 +60,9 @@
             "development": {
               "optimization": false,
               "extractLicenses": false,
-              "sourceMap": true
+              "sourceMap": true,
+              "outputMode": "static",
+              "ssr": false
             }
           },
           "defaultConfiguration": "production"
