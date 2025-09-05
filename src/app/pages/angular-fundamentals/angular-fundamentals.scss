@@ -1,0 +1,407 @@
+.angular-fundamentals-container {
+  padding: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  .header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+
+    h1 {
+      color: #dd0031;
+      margin: 0;
+      font-size: 2.5rem;
+      font-weight: 300;
+
+      i {
+        margin-right: 0.5rem;
+        color: #1976d2;
+      }
+    }
+  }
+
+  .tutorial-section {
+    padding: 1rem 0;
+
+    h2 {
+      color: #333;
+      border-bottom: 2px solid #dd0031;
+      padding-bottom: 0.5rem;
+      margin-bottom: 1rem;
+    }
+
+    h3 {
+      color: #1976d2;
+      margin: 1.5rem 0 1rem 0;
+    }
+
+    p {
+      line-height: 1.6;
+      color: #555;
+      margin-bottom: 1rem;
+    }
+  }
+
+  .example-container {
+    background: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+    &:hover {
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+      transition: box-shadow 0.3s ease;
+    }
+  }
+
+  .skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+
+  .navigation-demo {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+
+    a {
+      text-decoration: none;
+      padding: 0.75rem 1.5rem;
+      border-radius: 4px;
+      transition: all 0.3s ease;
+      border: 1px solid #1976d2;
+      color: #1976d2;
+
+      &:hover {
+        background: #1976d2;
+        color: white;
+      }
+
+      &.active {
+        background: #dd0031;
+        color: white;
+        border-color: #dd0031;
+      }
+    }
+  }
+
+  .form-field {
+    margin-bottom: 1.5rem;
+
+    label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: 500;
+      color: #333;
+    }
+
+    .error {
+      color: #dc3545;
+      font-size: 0.875rem;
+      margin-top: 0.25rem;
+      display: block;
+    }
+  }
+
+  .submission-result {
+    margin-top: 1rem;
+  }
+
+  .pipe-examples {
+    background: white;
+    padding: 1rem;
+    border-radius: 4px;
+    border: 1px solid #e0e0e0;
+
+    p {
+      margin: 0.5rem 0;
+      font-family: 'Courier New', monospace;
+
+      strong {
+        color: #1976d2;
+      }
+    }
+  }
+
+  .signals-demo {
+    text-align: center;
+    padding: 2rem;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 12px;
+    color: white;
+    margin: 1rem 0;
+
+    p {
+      font-size: 1.25rem;
+      margin: 1rem 0;
+      color: white;
+    }
+
+    .button-group {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      margin-top: 1.5rem;
+      flex-wrap: wrap;
+    }
+  }
+
+  .ssr-benefits {
+    ul {
+      list-style: none;
+      padding: 0;
+
+      li {
+        padding: 0.75rem 0;
+        border-bottom: 1px solid #eee;
+        color: #555;
+
+        &:last-child {
+          border-bottom: none;
+        }
+
+        strong {
+          color: #1976d2;
+        }
+      }
+    }
+  }
+
+  // PrimeNG Customizations
+  ::ng-deep {
+    .p-tabview {
+      .p-tabview-nav {
+        background: #f8f9fa;
+        border-bottom: 2px solid #dd0031;
+
+        .p-tabview-nav-link {
+          color: #555;
+          
+          &:hover {
+            color: #1976d2;
+            background: rgba(25, 118, 210, 0.1);
+          }
+        }
+
+        .p-highlight .p-tabview-nav-link {
+          color: #dd0031;
+          background: white;
+          border-bottom: 3px solid #dd0031;
+        }
+      }
+    }
+
+    .p-button {
+      transition: all 0.3s ease;
+      
+      &:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
+    }
+
+    .p-card {
+      border-radius: 12px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      
+      .p-card-header {
+        background: linear-gradient(135deg, #1976d2, #dd0031);
+        color: white;
+        border-radius: 12px 12px 0 0;
+      }
+    }
+
+    .p-inputtext {
+      border-radius: 6px;
+      border: 2px solid #e0e0e0;
+      transition: border-color 0.3s ease;
+      
+      &:focus {
+        border-color: #1976d2;
+        box-shadow: 0 0 0 3px rgba(25, 118, 210, 0.1);
+      }
+    }
+
+    .p-message {
+      border-radius: 6px;
+      margin: 1rem 0;
+    }
+
+    .p-chip {
+      background: #1976d2;
+      color: white;
+      
+      &:hover {
+        background: #1565c0;
+        transform: scale(1.05);
+        transition: all 0.2s ease;
+      }
+    }
+
+    .p-togglebutton {
+      .p-button {
+        border-radius: 25px;
+      }
+    }
+
+    .p-skeleton {
+      border-radius: 4px;
+    }
+
+    pre {
+      background: #2d3748;
+      color: #e2e8f0;
+      padding: 1.5rem;
+      border-radius: 8px;
+      overflow-x: auto;
+      font-family: 'Fira Code', 'Courier New', monospace;
+      font-size: 0.875rem;
+      line-height: 1.5;
+      margin: 1rem 0;
+
+      code {
+        color: inherit;
+        background: transparent;
+        padding: 0;
+        font-size: inherit;
+      }
+    }
+
+    code {
+      background: #f1f3f4;
+      color: #d73a49;
+      padding: 2px 6px;
+      border-radius: 3px;
+      font-family: 'Fira Code', 'Courier New', monospace;
+      font-size: 0.9em;
+    }
+
+    mark {
+      background: #ffeb3b;
+      color: #333;
+      padding: 2px 4px;
+      border-radius: 2px;
+    }
+  }
+
+  // Responsive Design
+  @media (max-width: 768px) {
+    padding: 0.5rem;
+
+    .header-content {
+      flex-direction: column;
+      text-align: center;
+      gap: 1rem;
+
+      h1 {
+        font-size: 2rem;
+      }
+    }
+
+    .navigation-demo {
+      flex-direction: column;
+      
+      a {
+        text-align: center;
+      }
+    }
+
+    .signals-demo {
+      padding: 1rem;
+
+      .button-group {
+        flex-direction: column;
+      }
+    }
+
+    .example-container {
+      padding: 1rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .header-content h1 {
+      font-size: 1.5rem;
+    }
+
+    .tutorial-section h2 {
+      font-size: 1.5rem;
+    }
+
+    .example-container {
+      padding: 0.75rem;
+    }
+  }
+
+  // Animation Classes
+  .fade-in {
+    animation: fadeIn 0.5s ease-in;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .slide-in {
+    animation: slideIn 0.3s ease-out;
+  }
+
+  @keyframes slideIn {
+    from {
+      transform: translateX(-20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  // Custom hover effects
+  .hover-lift {
+    transition: transform 0.2s ease;
+    
+    &:hover {
+      transform: translateY(-2px);
+    }
+  }
+
+  // Error state styling
+  .has-error {
+    .p-inputtext {
+      border-color: #dc3545;
+      
+      &:focus {
+        border-color: #dc3545;
+        box-shadow: 0 0 0 3px rgba(220, 53, 69, 0.1);
+      }
+    }
+  }
+
+  // Success state styling
+  .has-success {
+    .p-inputtext {
+      border-color: #28a745;
+      
+      &:focus {
+        border-color: #28a745;
+        box-shadow: 0 0 0 3px rgba(40, 167, 69, 0.1);
+      }
+    }
+  }
+}
+            

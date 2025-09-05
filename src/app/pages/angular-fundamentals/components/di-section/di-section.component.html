@@ -1,0 +1,30 @@
+      <!-- Dependency Injection Section -->
+      <!-- <p-tabPanel header="Dependency Injection" leftIcon="pi pi-sitemap"> -->
+        <div class="tutorial-section">
+          <h2>Dependency Injection</h2>
+          <p>DI is a design pattern where objects receive their dependencies from external sources rather than creating them.</p>
+          
+          <p-divider align="left">
+            <b>Injectable Service</b>
+          </p-divider>
+          
+          <!-- <p-code [code]="injectableServiceExample" lang="typescript"></p-code> -->
+
+          <p-divider align="left">
+            <b>@Injectable vs inject()</b>
+          </p-divider>
+          
+          <div class="example-container">
+            <p><strong>@Injectable</strong> (Capital I): Decorator that marks a class as available for DI</p>
+            <p><strong>inject()</strong> (lowercase): Function-based DI introduced in Angular 14+</p>
+            <p-button label="Get Data from Service" (click)="getServiceData()"></p-button>
+            <!-- <div *ngIf="serviceData">
+              <p-card>
+                <p>{{ serviceData }}</p>
+              </p-card>
+            </div> -->
+          </div>
+
+          <!-- <p-code [code]="injectFunctionExample" lang="typescript"></p-code> -->
+        </div>
+      <!-- </p-tabPanel> -->

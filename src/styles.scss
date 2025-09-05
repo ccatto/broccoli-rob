@@ -4,11 +4,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
 body {
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-family:
+    'Inter',
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    Roboto,
+    sans-serif;
   margin: 0;
   padding: 0;
 }
-
 
 // // PrimeNG v20+ method - try without the full path first
 // @import 'primeng/resources/primeng.css';
@@ -23,7 +28,6 @@ body {
 //   padding: 0;
 // }
 
-
 // // New PrimeNG v17+ paths
 // @import 'primeng/resources/themes/lara-light-indigo/theme.css';
 // @import 'primeng/resources/primeng.css';
@@ -34,7 +38,6 @@ body {
 //   margin: 0;
 //   padding: 0;
 // }
-
 
 // @import 'primeng/resources/themes/lara-light-blue/theme.css';
 // @import 'primeng/resources/primeng.css';
@@ -55,5 +58,5 @@ body {
 
 // Or try this if above doesn't work:
 // @import '~primeicons/primeicons.css';
-// @import '~primeng/themes/saga-blue/theme.css';  
+// @import '~primeng/themes/saga-blue/theme.css';
 // @import '~primeng/base/base.css';

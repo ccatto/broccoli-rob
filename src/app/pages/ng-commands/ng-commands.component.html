@@ -1,0 +1,11 @@
+<p>ng-commands works!</p>
+<p-card header="Common Angular CLI Commands">
+  <ul class="ng-commands-list">
+    @for (cmd of commands; track cmd.command) {
+      <li>
+        <i class="pi pi-terminal"></i>
+        <strong>{{ cmd.command }}</strong> - {{ cmd.description }}
+      </li>
+    }
+  </ul>
+</p-card>

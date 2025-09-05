@@ -1,0 +1,33 @@
+<!-- src/app/pages/angular-fundamentals/components/routing-section/routing-section.component.html -->
+
+
+      <!-- Routing Section -->
+      <!-- <p-tabPanel header="Routing" leftIcon="pi pi-directions"> -->
+        <div class="tutorial-section">
+          <h2>Angular Routing</h2>
+          <p>Routing enables navigation between different views in your Angular application.</p>
+          
+          <p-divider align="left">
+            <b>Route Configuration (app.routes.ts)</b>
+          </p-divider>
+          
+          <!-- <p-code 
+            [code]="routeConfigExample" 
+            lang="typescript">
+          </p-code> -->
+
+          <p-divider align="left">
+            <b>RouterLink Navigation</b>
+          </p-divider>
+          
+          <div class="example-container">
+            <p>Use RouterLink for client-side navigation:</p>
+            <div class="navigation-demo">
+              <a routerLink="/home" routerLinkActive="active" p-button pButton>Home</a>
+              <a routerLink="/about" routerLinkActive="active" p-button pButton>About</a>
+              <a routerLink="/contact" routerLinkActive="active" p-button pButton>Contact</a>
+            </div>
+            <!-- <p-code [code]="routerLinkExample" lang="html"></p-code> -->
+          </div>
+        </div>
+      <!-- </p-tabPanel> -->

@@ -5,8 +5,6 @@ import { Component } from '@angular/core';
   selector: 'app-page2',
   imports: [],
   templateUrl: './page2.component.html',
-  styleUrl: './page2.component.scss'
+  styleUrl: './page2.component.scss',
 })
-export class Page2 {
-
-}
+export class Page2 {}

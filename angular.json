@@ -29,9 +29,8 @@
                 "input": "public"
               }
             ],
-            
             "styles": [
-
+              
               "node_modules/primeicons/primeicons.css",
               "src/styles.scss"
             ],
@@ -101,8 +100,22 @@
               "src/styles.scss"
             ]
           }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "src/**/*.ts",
+              "src/**/*.html"
+            ]
+          }
         }
       }
     }
+  },
+  "cli": {
+    "schematicCollections": [
+      "@angular-eslint/schematics"
+    ]
   }
 }

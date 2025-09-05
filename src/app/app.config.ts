@@ -16,11 +16,11 @@ export const appConfig: ApplicationConfig = {
       theme: {
         preset: Aura,
         options: {
-          darkModeSelector: '.dark-mode' // optional for dark mode
-        }
-      }
-    })
-  ]
+          darkModeSelector: '.dark-mode', // optional for dark mode
+        },
+      },
+    }),
+  ],
 };
 
 // import { ApplicationConfig, provideBrowserGlobalErrorListeners, provideZoneChangeDetection } from '@angular/core';
