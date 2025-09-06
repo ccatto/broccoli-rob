@@ -6,7 +6,7 @@ import { DividerModule } from 'primeng/divider';
 
 @Component({
   selector: 'app-pipes-section',
-  standalone: true,
+
   // imports: [DividerModule, CodeHighlighterModule],
     imports: [DividerModule],
   templateUrl: './pipes-section.component.html',

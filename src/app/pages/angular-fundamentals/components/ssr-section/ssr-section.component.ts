@@ -2,15 +2,15 @@
 
 // src/app/pages/angular-fundamentals/components/ssr-section/ssr-section.component.ts
 import { Component } from '@angular/core';
-import { CardModule } from 'primeng/card';
-import { DividerModule } from 'primeng/divider';
+// import { CardModule } from 'primeng/card';
+// import { DividerModule } from 'primeng/divider';
 // import { CodeHighlighterModule } from 'primeng/codehighlighter';
 
 @Component({
   selector: 'app-ssr-section',
-  standalone: true,
+
   // imports: [CardModule, DividerModule, CodeHighlighterModule],
-    imports: [CardModule, DividerModule],
+    // imports: [CardModule, DividerModule],
   templateUrl: './ssr-section.component.html',
   styleUrls: ['./ssr-section.component.scss']
 })

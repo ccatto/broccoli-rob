@@ -1,0 +1,81 @@
+<!-- src/app/pages/angular-fundamentals/angular-fundamentals.html -->
+<div class="main-page-container">
+  <!-- Left Navigation Sidebar -->
+  <div class="sidebar">
+    <div class="sidebar-header">
+      <h3>Navigation</h3>
+    </div>
+    
+<nav class="sidebar-nav">
+  <ul class="nav-list">
+    @for (item of navItems; track item.id) {
+      <li
+        class="nav-item"
+        [class.active]="isActive(item.id)"
+        (click)="onNavItemClick(item.id)"
+      >
+        <a class="nav-link">
+          @if (item.icon) {
+            <i [class]="item.icon"></i>
+          }
+          <span class="nav-label">{{ item.label }}</span>
+        </a>
+      </li>
+    }
+  </ul>
+</nav>
+
+  </div>
+
+  <!-- Main Content Area -->
+  <div class="main-content">
+<div class="content-header">
+  <h2>{{ activeSectionLabel }}</h2>
+</div>
+    
+    <div class="content-body">
+      <!-- Components Section -->
+      @if (activeSection === 'components') {
+        <div class="section-content">
+          <!-- <app-components-section></app-components-section> -->
+        </div>
+      }
+
+      <!-- SSR Section -->
+      @if (activeSection === 'ssr') {
+        <div class="section-content">
+          <!-- <app-ssr-section></app-ssr-section> -->
+        </div>
+      }
+
+      <!-- Routing Section -->
+      @if (activeSection === 'routing') {
+        <div class="section-content">
+          <!-- <app-routing-section></app-routing-section> -->
+        </div>
+      }
+
+      <!-- Signals Section -->
+      @if (activeSection === 'signals') {
+        <div class="section-content">
+          <!-- <app-signals-section></app-signals-section> -->
+        </div>
+      }
+    </div>
+  </div>
+</div>
+
+<!-- <p-card>
+  <ng-template pTemplate="header">
+    <div class="header-content">
+      <h1><i class="pi pi-code"></i> Angular Fundamentals Tutorial</h1>
+      <p-badge value="Comprehensive Guide" severity="success"></p-badge>
+      <br/>
+      <span>next stuff #todo</span>
+    </div>
+  </ng-template>
+  <app-components-section></app-components-section>
+  <app-ssr-section></app-ssr-section>
+  <app-routing-section></app-routing-section>
+  <app-signals-section></app-signals-section>
+</p-card> -->

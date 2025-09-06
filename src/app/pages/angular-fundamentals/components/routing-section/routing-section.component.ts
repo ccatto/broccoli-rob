@@ -7,7 +7,7 @@ import { DividerModule } from 'primeng/divider';
 
 @Component({
   selector: 'app-routing-section',
-  standalone: true,
+
     imports: [RouterModule, ButtonModule, DividerModule],
   // imports: [RouterModule, ButtonModule, CodeHighlighterModule, DividerModule],
   templateUrl: './routing-section.component.html',

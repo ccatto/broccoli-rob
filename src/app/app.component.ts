@@ -1,48 +1,3 @@
-// // src/app/app.component.ts
-
-
-// import { Component } from '@angular/core';
-// import { PrimeNgExamplesComponent } from './pages/prime-ng-examples/prime-ng-examples.component';
-
-// @Component({
-//   selector: 'app-root',
-//   standalone: true,
-//   imports: [PrimeNgExamplesComponent],
-//   template: `
-//     <app-prime-ng-examples></app-prime-ng-examples>
-//   `
-// })
-// export class AppComponent {}
-
-
-// import { Component } from '@angular/core';
-// import { RouterOutlet } from '@angular/router';
-// import { PrimeNgExamplesComponent } from './pages/prime-ng-examples/prime-ng-examples.component';
-
-// @Component({
-//   selector: 'app-root',
-//   standalone: true,
-//   imports: [RouterOutlet, PrimeNgExamplesComponent],
-//   template: `
-//     <!-- The layout component handles header/footer -->
-//     <!-- Individual pages get injected here via routing -->
-//     <router-outlet></router-outlet>
-//   `,
-//   styles: [
-//     `
-//       :host {
-//         display: block;
-//         min-height: 100vh;
-//       }
-//     `,
-//   ],
-// })
-// export class AppComponent {
-//   title = 'broccoli-rob-angular-20';
-// }
-
-
-
 
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
@@ -91,3 +46,49 @@ import { ThemeToggleComponent } from './shared/components/theme-toggle.component
 export class AppComponent {
   title = 'broccoli-rob-angular-20';
 }
+
+
+
+
+// // src/app/app.component.ts
+
+
+// import { Component } from '@angular/core';
+// import { PrimeNgExamplesComponent } from './pages/prime-ng-examples/prime-ng-examples.component';
+
+// @Component({
+//   selector: 'app-root',
+//   standalone: true,
+//   imports: [PrimeNgExamplesComponent],
+//   template: `
+//     <app-prime-ng-examples></app-prime-ng-examples>
+//   `
+// })
+// export class AppComponent {}
+
+
+// import { Component } from '@angular/core';
+// import { RouterOutlet } from '@angular/router';
+// import { PrimeNgExamplesComponent } from './pages/prime-ng-examples/prime-ng-examples.component';
+
+// @Component({
+//   selector: 'app-root',
+//   standalone: true,
+//   imports: [RouterOutlet, PrimeNgExamplesComponent],
+//   template: `
+//     <!-- The layout component handles header/footer -->
+//     <!-- Individual pages get injected here via routing -->
+//     <router-outlet></router-outlet>
+//   `,
+//   styles: [
+//     `
+//       :host {
+//         display: block;
+//         min-height: 100vh;
+//       }
+//     `,
+//   ],
+// })
+// export class AppComponent {
+//   title = 'broccoli-rob-angular-20';
+// }

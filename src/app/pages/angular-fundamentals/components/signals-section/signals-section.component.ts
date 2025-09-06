@@ -8,7 +8,7 @@ import { DividerModule } from 'primeng/divider';
 
 @Component({
   selector: 'app-signals-section',
-  standalone: true,
+
   // imports: [ButtonModule, DividerModule, CodeHighlighterModule],
     imports: [ButtonModule, DividerModule],
   templateUrl: './signals-section.component.html',

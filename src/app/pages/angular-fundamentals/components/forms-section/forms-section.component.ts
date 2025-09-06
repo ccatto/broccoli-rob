@@ -9,7 +9,7 @@ import { DividerModule } from 'primeng/divider';
 
 @Component({
   selector: 'app-forms-section',
-  standalone: true,
+
   imports: [FormsModule, ReactiveFormsModule, InputTextModule, ButtonModule, MessageModule, DividerModule],
   templateUrl: './forms-section.component.html',
   styleUrls: ['./forms-section.component.scss']

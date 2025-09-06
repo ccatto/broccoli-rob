@@ -8,7 +8,7 @@ import { DividerModule } from 'primeng/divider';
 
 @Component({
   selector: 'app-di-section',
-  standalone: true,
+
   // imports: [ButtonModule, CardModule, DividerModule, CodeHighlighterModule],
     imports: [ButtonModule, CardModule, DividerModule],
   templateUrl: './di-section.component.html',

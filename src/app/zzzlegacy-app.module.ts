@@ -5,7 +5,7 @@
 
 // @Component({
 //   selector: 'app-root',
-//   standalone: true,
+
 //   imports: [RouterOutlet, ToastModule, ButtonModule],
 //   template: `
 //     <p-toast></p-toast>

@@ -13,7 +13,9 @@ export const routes: Routes = [
       },
       {
         path: 'angular-fundamentals',
-        loadComponent: () => import('./pages/angular-fundamentals/angular-fundamentals').then((m) => m.AngularFundamentalsComponent),
+                // loadComponent: () => import('./pages/angular-fundamentals/angular-fundamentals').then((m) => m.AngularFundamentalsComponent),
+
+        loadComponent: () => import('./pages/angular-fundamentals/angular-fundamentals.component').then((m) => m.AngularFundamentalsComponent),
       },
       {
         path: 'hello-world',
