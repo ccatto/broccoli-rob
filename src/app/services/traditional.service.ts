@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class TraditionalService {
   private data = 'Data from Traditional Constructor Injection';
@@ -23,15 +23,15 @@ export class TraditionalService {
   }
 
   // Simulate some business logic
-  performBusinessLogic(): { 
-    result: string; 
-    timestamp: Date; 
-    serviceType: string; 
+  performBusinessLogic(): {
+    result: string;
+    timestamp: Date;
+    serviceType: string;
   } {
     return {
       result: 'Traditional service business logic executed',
       timestamp: new Date(),
-      serviceType: 'Constructor Injection'
+      serviceType: 'Constructor Injection',
     };
   }
 }

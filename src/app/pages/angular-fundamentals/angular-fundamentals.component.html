@@ -5,60 +5,90 @@
     <div class="sidebar-header">
       <h3>Navigation</h3>
     </div>
-    
-<nav class="sidebar-nav">
-  <ul class="nav-list">
-    @for (item of navItems; track item.id) {
-      <li
-        class="nav-item"
-        [class.active]="isActive(item.id)"
-        (click)="onNavItemClick(item.id)"
-      >
-        <a class="nav-link">
-          @if (item.icon) {
-            <i [class]="item.icon"></i>
-          }
-          <span class="nav-label">{{ item.label }}</span>
-        </a>
-      </li>
-    }
-  </ul>
-</nav>
 
+    <nav class="sidebar-nav">
+      <ul class="nav-list">
+        @for (item of navItems; track item.id) {
+          <li class="nav-item" [class.active]="isActive(item.id)" (click)="onNavItemClick(item.id)">
+            <a class="nav-link">
+              @if (item.icon) {
+                <i [class]="item.icon"></i>
+              }
+              <span class="nav-label">{{ item.label }}</span>
+            </a>
+          </li>
+        }
+      </ul>
+    </nav>
   </div>
 
   <!-- Main Content Area -->
   <div class="main-content">
-<div class="content-header">
-  <h2>{{ activeSectionLabel }}</h2>
-</div>
-    
+    <div class="content-header">
+      <h2>{{ activeSectionLabel }}</h2>
+    </div>
+
     <div class="content-body">
       <!-- Components Section -->
       @if (activeSection === 'components') {
         <div class="section-content">
-          <!-- <app-components-section></app-components-section> -->
+          <app-components-section></app-components-section>
         </div>
       }
 
       <!-- SSR Section -->
       @if (activeSection === 'ssr') {
         <div class="section-content">
-          <!-- <app-ssr-section></app-ssr-section> -->
+          <app-ssr-section></app-ssr-section>
         </div>
       }
 
       <!-- Routing Section -->
       @if (activeSection === 'routing') {
         <div class="section-content">
-          <!-- <app-routing-section></app-routing-section> -->
+          <app-routing-section></app-routing-section>
         </div>
       }
 
       <!-- Signals Section -->
       @if (activeSection === 'signals') {
         <div class="section-content">
-          <!-- <app-signals-section></app-signals-section> -->
+          <app-signals-section></app-signals-section>
+        </div>
+      }
+
+      <!-- DISectionComponent section -->
+      @if (activeSection === 'di') {
+        <div class="section-content">
+          <app-di-section></app-di-section>
+        </div>
+      }
+
+      <!-- Pipes section -->
+      @if (activeSection === 'pipes') {
+        <div class="section-content">
+          <app-pipes-section></app-pipes-section>
+        </div>
+      }
+
+      <!-- Pipes section -->
+      @if (activeSection === 'forms') {
+        <div class="section-content">
+          <app-forms-section></app-forms-section>
+        </div>
+      }
+
+            <!-- Showcase -->
+      @if (activeSection === 'showcase') {
+        <div class="section-content">
+          <app-modern-showcase></app-modern-showcase>
+        </div>
+      }
+
+                  <!-- Version -->
+      @if (activeSection === 'versions') {
+        <div class="section-content">
+          <app-version-features></app-version-features>
         </div>
       }
     </div>

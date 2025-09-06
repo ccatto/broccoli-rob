@@ -18,14 +18,11 @@ import { SSRSectionComponent } from './components/ssr-section/ssr-section.compon
     // Import your standalone components here instead of declaring them
     AngularFundamentalsComponent,
     ComponentsSectionComponent,
-    SSRSectionComponent
+    SSRSectionComponent,
   ],
-  exports: [
-    AngularFundamentalsComponent
-  ]
+  exports: [AngularFundamentalsComponent],
 })
 export class AngularFundamentalsModule {}
-
 
 // // angular-fundamentals.module.ts
 // import { NgModule } from '@angular/core';
@@ -69,8 +66,6 @@ export class AngularFundamentalsModule {}
 // })
 // export class AngularFundamentalsModule {}
 
-
-
 // import { NgModule } from '@angular/core';
 // import { CommonModule } from '@angular/common';
 // import { FormsModule, ReactiveFormsModule } from '@angular/forms';
@@ -96,11 +91,6 @@ export class AngularFundamentalsModule {}
 //   ]
 // })
 // export class AngularFundamentalsModule {}
-
-
-
-
-
 
 // // import { NgModule } from '@angular/core';
 // // import { CommonModule } from '@angular/common';
@@ -143,8 +133,6 @@ export class AngularFundamentalsModule {}
 // //   ]
 // // })
 // // export class AngularFundamentalsModule {}
-
-
 
 // // // src/app/pages/angular-fundamentals/angular-fundamentals.module.ts
 

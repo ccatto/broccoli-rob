@@ -8,11 +8,11 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-ssr-section',
-
+  standalone: true, // ← Add this!
   // imports: [CardModule, DividerModule, CodeHighlighterModule],
-    // imports: [CardModule, DividerModule],
+  // imports: [CardModule, DividerModule],
   templateUrl: './ssr-section.component.html',
-  styleUrls: ['./ssr-section.component.scss']
+  styleUrls: ['./ssr-section.component.scss'],
 })
 export class SSRSectionComponent {
   ssrConfigExample = `import { provideServerRendering } from '@angular/platform-server';`;

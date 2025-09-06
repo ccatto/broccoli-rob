@@ -10,17 +10,23 @@ import { DividerModule } from 'primeng/divider';
   selector: 'app-signals-section',
 
   // imports: [ButtonModule, DividerModule, CodeHighlighterModule],
-    imports: [ButtonModule, DividerModule],
+  imports: [ButtonModule, DividerModule],
   templateUrl: './signals-section.component.html',
-  styleUrls: ['./signals-section.component.scss']
+  styleUrls: ['./signals-section.component.scss'],
 })
 export class SignalsSectionComponent {
   counter = signal(0);
   doubledCounter = computed(() => this.counter() * 2);
 
-  increment() { this.counter.set(this.counter() + 1); }
-  decrement() { this.counter.set(this.counter() - 1); }
-  reset() { this.counter.set(0); }
+  increment() {
+    this.counter.set(this.counter() + 1);
+  }
+  decrement() {
+    this.counter.set(this.counter() - 1);
+  }
+  reset() {
+    this.counter.set(0);
+  }
 
   signalsExample = `const count = signal(0); const double = computed(() => count() * 2);`;
 }

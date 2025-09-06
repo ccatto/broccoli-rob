@@ -8,9 +8,9 @@ import { DividerModule } from 'primeng/divider';
   selector: 'app-pipes-section',
 
   // imports: [DividerModule, CodeHighlighterModule],
-    imports: [DividerModule],
+  imports: [DividerModule],
   templateUrl: './pipes-section.component.html',
-  styleUrls: ['./pipes-section.component.scss']
+  styleUrls: ['./pipes-section.component.scss'],
 })
 export class PipesSectionComponent {
   sampleData = { text: 'Angular Pipes Example', price: 123.45, date: new Date() };

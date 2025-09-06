@@ -1,6 +1,119 @@
+<!-- src/app/pages/angular-fundamentals/components/components-section/components-section.component.html -->
 <div class="components-section-component">
   <h2>Angular Components</h2>
-  <p>Components are the building blocks of Angular applications. They control a part of the screen called a view.</p>
+  <p>
+    Components are the building blocks of Angular applications. They control a part of the screen
+    called a view.
+  </p>
+  <p>todo add</p>
 
+  <div class="tutorial-section">
+    <h2>Angular Components</h2>
+    <p>
+      Components are the building blocks of Angular applications. They control a part of the screen
+      called a view.
+    </p>
 
+    <p-divider align="left">
+      <b>Control Flow: {{ '@if' }} & {{ '@for' }}</b>
+    </p-divider>
+
+    <div class="example-container">
+      <h3>{{ '@if' }} Directive Example</h3>
+      <p-toggleButton
+        [(ngModel)]="showWelcome"
+        onLabel="Hide Message"
+        offLabel="Show Message"
+      ></p-toggleButton>
+      {{ '@if (showWelcome) {' }}
+      <p-message severity="info" text="Welcome to Angular!"></p-message>
+      {{ '}' }}
+
+      <h3>{{ '@for' }} Directive Example</h3>
+      <div class="skills-container">
+        {{ '@for (skill of angularSkills; track skill.id) {' }}
+        then display with skill.name
+        {{ '}' }}
+      </div>
+    </div>
+
+    <p-divider align="left">
+      <b>Property Binding</b>
+    </p-divider>
+
+    <div class="example-container">
+      <p>Property binding allows you to bind component properties to HTML element properties.</p>
+      <p-toggleButton
+        [(ngModel)]="isEditable"
+        onLabel="Disable Editing"
+        offLabel="Enable Editing"
+      ></p-toggleButton>
+      <div
+        [contentEditable]="isEditable"
+        [style]="{
+          border: '1px solid #ccc',
+          padding: '10px',
+          margin: '10px 0',
+          'min-height': '50px',
+        }"
+      >
+        {{ '{{ isEditable ? "Click here to edit this content!" : "Content editing is disabled" }}'
+        }}
+      </div>
+    </div>
+
+    <p-divider align="left">
+      <b>Event Handling</b>
+    </p-divider>
+
+    <div class="example-container">
+      <pre><code>
+        &lt;p-button 
+          label="Click Me!" 
+          (click)="handleButtonClick()" 
+          (mouseenter)="onMouseEnter()" 
+          (mouseleave)="onMouseLeave()" 
+          [style]="buttonStyle"&gt;
+        &lt;/p-button&gt;
+
+        &lt;p-message *ngIf="lastEvent" 
+          [severity]="messageSeverity" 
+          [text]="lastEvent"&gt;
+        &lt;/p-message&gt;
+      </code></pre>
+    </div>
+
+    <p-divider align="left">
+      <b>Input & Output Properties</b>
+    </p-divider>
+
+    <div class="example-container">
+      <pre><code>
+    &lt;div class="example-container"&gt;
+      &lt;p&gt;Demonstration of @Input and @Output decorators:&lt;/p&gt;
+      &lt;p-inputText 
+        [(ngModel)]="childMessage" 
+        placeholder="Enter message for child component"&gt;
+      &lt;/p-inputText&gt;
+      &lt;app-child-demo 
+        [message]="childMessage"
+        (messageChanged)="onChildMessageChanged($event)"&gt;
+      &lt;/app-child-demo&gt;
+      &lt;p *ngIf="receivedMessage"&gt;
+        Received from child: {{ '{{ receivedMessage }}' }}
+      &lt;/p&gt;
+    &lt;/div&gt;
+      </code></pre>
+    </div>
+
+        <p-divider align="left">
+      <b>Deferrable Views ({{ '@defer' }})</b>
+    </p-divider>
+    
+
+        <p-divider align="left">
+      <b>Optimized Images</b>
+    </p-divider>
+
+  </div>
 </div>

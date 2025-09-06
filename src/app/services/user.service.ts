@@ -7,12 +7,12 @@ export interface User {
 }
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class UserService {
   private users: User[] = [
     { id: 1, name: 'Alice', email: 'alice@example.com' },
-    { id: 2, name: 'Bob', email: 'bob@example.com' }
+    { id: 2, name: 'Bob', email: 'bob@example.com' },
   ];
 
   getUsers(): User[] {

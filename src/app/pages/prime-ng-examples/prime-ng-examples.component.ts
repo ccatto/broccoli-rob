@@ -11,7 +11,7 @@ import { ButtonModule } from 'primeng/button';
     <p-toast></p-toast>
     <button pButton type="button" label="Click Me" (click)="showToast()"></button>
   `,
-  providers: [MessageService]
+  providers: [MessageService],
 })
 export class PrimeNgExamplesComponent {
   constructor(private messageService: MessageService) {}
@@ -20,7 +20,7 @@ export class PrimeNgExamplesComponent {
     this.messageService.add({
       severity: 'success',
       summary: 'It works!',
-      detail: 'PrimeNG button clicked'
+      detail: 'PrimeNG button clicked',
     });
   }
 }

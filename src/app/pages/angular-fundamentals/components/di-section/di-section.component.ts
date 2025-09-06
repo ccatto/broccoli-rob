@@ -10,14 +10,16 @@ import { DividerModule } from 'primeng/divider';
   selector: 'app-di-section',
 
   // imports: [ButtonModule, CardModule, DividerModule, CodeHighlighterModule],
-    imports: [ButtonModule, CardModule, DividerModule],
+  imports: [ButtonModule, CardModule, DividerModule],
   templateUrl: './di-section.component.html',
-  styleUrls: ['./di-section.component.scss']
+  styleUrls: ['./di-section.component.scss'],
 })
 export class DISectionComponent {
   serviceData?: string;
 
-  getServiceData() { this.serviceData = 'Data fetched from service!'; }
+  getServiceData() {
+    this.serviceData = 'Data fetched from service!';
+  }
 
   injectableServiceExample = `@Injectable({ providedIn: 'root' }) export class MyService {}`;
   injectFunctionExample = `const value = inject(MyService);`;

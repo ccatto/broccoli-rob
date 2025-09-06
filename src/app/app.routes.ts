@@ -13,9 +13,12 @@ export const routes: Routes = [
       },
       {
         path: 'angular-fundamentals',
-                // loadComponent: () => import('./pages/angular-fundamentals/angular-fundamentals').then((m) => m.AngularFundamentalsComponent),
+        // loadComponent: () => import('./pages/angular-fundamentals/angular-fundamentals').then((m) => m.AngularFundamentalsComponent),
 
-        loadComponent: () => import('./pages/angular-fundamentals/angular-fundamentals.component').then((m) => m.AngularFundamentalsComponent),
+        loadComponent: () =>
+          import('./pages/angular-fundamentals/angular-fundamentals.component').then(
+            (m) => m.AngularFundamentalsComponent,
+          ),
       },
       {
         path: 'hello-world',
@@ -35,10 +38,12 @@ export const routes: Routes = [
         path: 'page3',
         loadComponent: () => import('./pages/page3/page3.component').then((m) => m.Page3),
       },
-            {
+      {
         path: 'prime-ng-examples',
         loadComponent: () =>
-          import('./pages/prime-ng-examples/prime-ng-examples.component').then((m) => m.PrimeNgExamplesComponent),
+          import('./pages/prime-ng-examples/prime-ng-examples.component').then(
+            (m) => m.PrimeNgExamplesComponent,
+          ),
       },
       {
         path: 'tutorial',

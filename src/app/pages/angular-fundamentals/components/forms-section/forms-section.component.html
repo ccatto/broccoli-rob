@@ -1,0 +1,85 @@
+<div>Forms body hey now</div>
+
+
+  <!-- <p-tabPanel header="Forms" leftIcon="pi pi-file-edit"> -->
+        <div class="tutorial-section">
+          <h2>Angular Forms</h2>
+          <p>Angular provides two approaches to handling forms: Template-driven and Reactive forms.</p>
+          
+          <p-divider align="left">
+            <b>Template-driven Forms</b>
+          </p-divider>
+          
+          <form #templateForm="ngForm" class="example-container">
+            <div class="form-field">
+              <label for="name">Name:</label>
+              <p-inputText 
+                id="name"
+                name="name" 
+                [(ngModel)]="templateFormData.name" 
+                #nameField="ngModel"
+                required>
+              </p-inputText>
+              <!-- <small class="error" @If="nameField.invalid && nameField.touched">Name is required</small> -->
+            </div>
+            
+            <div class="form-field">
+              <label for="email">Email:</label>
+              <p-inputText 
+                id="email"
+                name="email" 
+                [(ngModel)]="templateFormData.email" 
+                #emailField="ngModel"
+                email
+                required>
+              </p-inputText>
+              <!-- <small class="error" @If="emailField.invalid && emailField.touched">Valid email is required</small> -->
+            </div>
+            
+            <p-button 
+              label="Submit Template Form" 
+              [disabled]="!templateForm.valid"
+              (click)="submitTemplateForm(templateForm)">
+            </p-button>
+          </form>
+
+          <p-divider align="left">
+            <b>Reactive Forms</b>
+          </p-divider>
+          
+          <form [formGroup]="reactiveForm" (ngSubmit)="submitReactiveForm()" class="example-container">
+            <div class="form-field">
+              <label for="reactiveeName">Name:</label>
+              <p-inputText 
+                id="reactiveName"
+                formControlName="name">
+              </p-inputText>
+              <!-- <small class="error" @If="reactiveForm.get('name')?.invalid && reactiveForm.get('name')?.touched">
+                Name is required
+              </small> -->
+            </div>
+            
+            <div class="form-field">
+              <label for="reactiveEmail">Email:</label>
+              <p-inputText 
+                id="reactiveEmail"
+                formControlName="email">
+              </p-inputText>
+              <!-- <small class="error" @If="reactiveForm.get('email')?.invalid && reactiveForm.get('email')?.touched">
+                Valid email is required
+              </small> -->
+            </div>
+            
+            <p-button 
+              label="Submit Reactive Form" 
+              [disabled]="!reactiveForm.valid"
+              type="submit">
+            </p-button>
+          </form>
+
+          <!-- <div @If="formSubmissionResult" class="submission-result"> -->
+            <!-- <span> error YO</span> -->
+            <!-- <p-message [severity]="formSubmissionResult.severity" [text]="formSubmissionResult.text"></p-message> -->
+          <!-- </div> -->
+        </div>
+      <!-- </p-tabPanel> -->
